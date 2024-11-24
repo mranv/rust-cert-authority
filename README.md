@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  <a href="https://github.com/mranv/rust-cert-authority/blob/main/LICENSE">
+  <a href="https://github.com/mranv/rust-cert-authority/blob/singed-cert/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
   <!-- <a href="https://github.com/mranv/rust-cert-authority/actions">
@@ -92,18 +92,6 @@ cargo run
 - OpenSSL development packages
 - Linux, macOS, or Windows
 
-## 🤝 Contributing
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/mranv">
-        <img src="/api/placeholder/100/100" width="100px;" alt="Anubhav Gain"/><br />
-        <sub><b>Anubhav Gain</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
 
 ## 📄 License
 
@@ -119,5 +107,5 @@ cargo run
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/mranv">Anubhav Gain</a></sub>
+  <sub>Built with ❤️ by <a href="https://mranv.github.io">Anubhav Gain</a></sub>
 </div>
