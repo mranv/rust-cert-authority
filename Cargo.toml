@@ -1,7 +1,24 @@
 [package]
-name = "ca_cert_demo"
+name = "rustls-ca-forge"
 version = "0.1.0"
 edition = "2021"
+authors = ["Anubhav Gain <iamanubhavgain@gmail.com>"]
+description = "A robust Rust-based Certificate Authority and TLS certificate generator with secure HTTPS server implementation"
+documentation = "https://github.com/mranv/rust-cert-authority/wiki"
+homepage = "https://github.com/mranv/rust-cert-authority"
+repository = "https://github.com/mranv/rust-cert-authority"
+license = "MIT"
+readme = "README.md"
+keywords = ["tls", "certificate", "security", "https", "rustls"]
+categories = ["cryptography", "network-programming", "web-programming::http-server"]
+exclude = [
+    "*.pem",
+    "*.key",
+    "*.crt",
+    "certs/*",
+    ".gitignore",
+    ".github/*"
+]
 
 [dependencies]
 rcgen = "0.11"
@@ -11,3 +28,24 @@ rustls = "0.21"
 rustls-pemfile = "1.0"
 hyper = { version = "0.14", features = ["full"] }
 time = "0.3"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = 'abort'
+strip = true
+
+[features]
+default = []
+full = []
+
+[package.metadata]
+msrv = "1.70.0"  # Minimum Supported Rust Version
